@@ -1,0 +1,52 @@
+.container-portafolio .cabecera-portafolio > div:first-child {
+    padding: 10px;
+}
+
+.container-portafolio .container-proyectos {
+    width: 80%;
+    max-width: 1400px;
+    margin: 20px auto 20px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+.container-portafolio .container-proyectos > div {
+    border-radius: 10px;
+}
+
+.container-portafolio .container-proyectos > div figure {
+    width: 100%;
+    line-height: 0;
+}
+
+.container-portafolio .container-proyectos > div figure img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container-portafolio .container-proyectos > div div:nth-child(3) {
+    text-align: justify;
+    padding: 7px;
+}
+
+@media screen and (max-width: 1100px) {
+    .container-portafolio .container-proyectos {
+        width: 96%;
+    }
+}
+
+@media screen and (max-width: 800px) { 
+    .container-portafolio .container-proyectos {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container-portafolio .container-proyectos {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}

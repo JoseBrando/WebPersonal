@@ -1,0 +1,22 @@
+.footer-container .footer-autor {
+    text-align: center;
+    padding: 20px 10px 20px 10px;
+}
+
+.footer-container .footer-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 20px 30px 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-container .footer-contacto {
+        flex-direction: column;
+        padding: 20px 2px 20px 2px;
+    }
+
+    .footer-container .footer-contacto > div:first-child {
+        margin-bottom: 30px;
+    }
+}

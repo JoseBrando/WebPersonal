@@ -1,0 +1,66 @@
+<header class="header-container c-white">
+  <div class="header-menu bg-ink">
+    <div
+      class="cursor-pointer logo text-center"
+      title="Home"
+      [routerLink]="['/home']"
+    >
+      <p class="c-rubyred-first-letter font-size-one">Brando Cortés</p>
+      <p>Software Developer</p>
+    </div>
+
+    <div class="menu bg-ink" #menu>
+      <ul>
+        <li>
+          <a
+            [routerLink]="['/home']"
+            [routerLinkActive]="['active']"
+            (click)="funIconMenu()"
+            ><span class="icon-home"></span> HOME</a
+          >
+        </li>
+        <li>
+          <a href="https://brandocortes.com/blog/"
+            ><span class="icon-blogger"></span> BLOG</a
+          >
+        </li>
+        <!--<li>
+           <a
+             [routerLink]="['/sobre-mi']"
+            [routerLinkActive]="['active']"
+            (click)="funIconMenu()"
+            ><span class="icon-user-tie"></span> SOBRE MÍ</a
+          >
+        </li>-->
+        <li>
+          <a
+            [routerLink]="['/portafolio']"
+            [routerLinkActive]="['active']"
+            (click)="funIconMenu()"
+            ><span class="icon-briefcase"></span> PORTAFOLIO</a
+          >
+        </li>
+        <li>
+          <a
+            [routerLink]="['/contacto']"
+            [routerLinkActive]="['active']"
+            (click)="funIconMenu()"
+            ><span class="icon-users"></span> CONTACTO</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="icono-menu">
+      <a
+        [routerLink]="['/contacto']"
+        [routerLinkActive]="['active']"
+        title="Contacto"
+        ><span class="icon-mail2"></span
+      ></a>
+      <a (click)="funIconMenu()" class="cursor-pointer"
+        >MENÚ <span class="icon-menu" #iconoMenu></span
+      ></a>
+    </div>
+  </div>
+</header>

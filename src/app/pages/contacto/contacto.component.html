@@ -1,0 +1,170 @@
+<section class="container-contacto animated fadeIn">
+  <article class="grid-contacto shadow">
+    <div class="bg-rubyred padding">
+      <p class="c-white font-size-title-two">INFORMACIÓN DE CONTACTO</p>
+      <br />
+      <ul>
+        <li class="margin-bottom">
+          <a href="mailto:brandocortes10@gmail.com" class="font-size-three"
+            ><span class="icon-mail2 padding-right"></span
+            >brandocortes10@gmail.com</a
+          >
+        </li>
+        <li class="margin-bottom">
+          <a
+            href="https://www.linkedin.com/in/josé-brando-cortés-martínez-5b4578184"
+            target="_blank"
+            class="font-size-three"
+            ><span class="icon-linkedin padding-right"></span>LinkedIn</a
+          >
+        </li>
+        <li class="margin-bottom">
+          <a
+            href="https://github.com/JoseBrando"
+            target="_blank"
+            class="font-size-three"
+            ><span class="icon-github padding-right"></span>GitHub</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <div class="padding">
+      <p class="font-size-title-two">Envíame un mensaje</p>
+      <br />
+
+      <form (ngSubmit)="guardar(f)" #f="ngForm">
+        <label
+          for="nombre"
+          class="font-size-three"
+          [ngClass]="{
+            'c-rubyred': nombre.errors?.required && nombre.touched
+          }"
+        >
+          Nombre *
+
+          <label
+            *ngIf="nombre.errors?.required && nombre.touched"
+            class="c-rubyred"
+          >
+            <small>Este campo es obligatorio</small>
+          </label> </label
+        ><br />
+        <input
+          type="text"
+          class="padding-two font-size-three"
+          id="nombre"
+          name="nombre"
+          title="Nombre"
+          [(ngModel)]="contactoModel.nombre"
+          required
+          #nombre="ngModel"
+          [ngClass]="{
+            'border-rubyred': nombre.errors?.required && nombre.touched
+          }"
+        /><br /><br />
+
+        <label
+          for="email"
+          class="font-size-three"
+          [ngClass]="{
+            'c-rubyred':
+              (email.errors?.required && email.touched) || email.errors?.pattern
+          }"
+        >
+          Email *
+
+          <label
+            *ngIf="email.errors?.required && email.touched"
+            class="c-rubyred"
+          >
+            <small>Este campo es obligatorio</small>
+          </label>
+
+          <label *ngIf="email.errors?.pattern" class="c-rubyred">
+            <small>El campo no tiene formato de correo</small>
+          </label> </label
+        ><br />
+        <input
+          type="email"
+          class="padding-two font-size-three"
+          id="email"
+          name="email"
+          [(ngModel)]="contactoModel.email"
+          title="Email"
+          required
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"
+          #email="ngModel"
+          [ngClass]="{
+            'border-rubyred':
+              (email.errors?.required && email.touched) || email.errors?.pattern
+          }"
+        /><br /><br />
+
+        <label for="asunto" class="font-size-three">Asunto (opcional)</label
+        ><br />
+        <input
+          type="text"
+          class="padding-two font-size-three"
+          id="asunto"
+          name="asunto"
+          [(ngModel)]="contactoModel.asunto"
+          title="Asunto"
+        /><br /><br />
+
+        <label
+          for="mensaje"
+          class="font-size-three"
+          [ngClass]="{
+            'c-rubyred': mensaje.errors?.required && mensaje.touched
+          }"
+        >
+          Mensaje *
+
+          <label
+            *ngIf="mensaje.errors?.required && mensaje.touched"
+            class="c-rubyred"
+          >
+            <small>Este campo es obligatorio</small>
+          </label> </label
+        ><br />
+        <textarea
+          class="padding-two font-size-three"
+          id="mensaje"
+          name="mensaje"
+          [(ngModel)]="contactoModel.mensaje"
+          rows="5"
+          title="Mensaje"
+          required
+          #mensaje="ngModel"
+          [ngClass]="{
+            'border-rubyred': mensaje.errors?.required && mensaje.touched
+          }"
+        >
+        </textarea
+        ><br /><br />
+
+        <input
+          type="submit"
+          value="Enviar Mensaje"
+          class="btn-primary cursor-pointer"
+        /><br />
+
+        <label class="none animated fadeIn" #smsContacto>
+          <br />
+          * Por favor complete todos los campos obligatorios
+        </label>
+
+        <label class="none animated fadeIn alert-send" #smsEnviado>
+          <br />
+          Muchas gracias por tu mensaje
+        </label>
+
+        <label class="none animated fadeIn alert-error" #smsError>
+          <br />
+          Ocurrio un error al enviar su mensaje
+        </label>
+      </form>
+    </div>
+  </article>
+</section>
