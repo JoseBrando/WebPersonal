@@ -164,7 +164,43 @@ a:hover {
   border-bottom: 1px solid red;
 }
 
-/* Animaciones */
+/*******************************************
+  404
+*******************************************/
+.error {
+  background-image: url("/assets/img/error.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.error article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.error article h1 {
+  font-size: 40px;
+  padding: 10px 0px 10px 0px;
+}
+
+.error article h3 {
+  font-size: 30px;
+  padding: 0px 0px 20px 0px;
+}
+
+/*******************************************
+  Animaciones
+*******************************************/
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;

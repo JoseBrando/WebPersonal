@@ -1,12 +1,8 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
   selector: "app-notfoundpage",
   templateUrl: "./notfoundpage.component.html",
-  styles: ["./notfoundpage.component.css"]
+  styles: []
 })
-export class NotfoundpageComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit() {}
-}
+export class NotfoundpageComponent {}
