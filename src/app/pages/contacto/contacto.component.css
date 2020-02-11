@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.container-contacto ul {
+  list-style: none;
+}
+
 .container-contacto .grid-contacto {
   width: 80%;
   max-width: 1400px;
@@ -11,6 +15,10 @@
   grid-template-columns: 40% 1fr;
   grid-template-rows: auto;
   border-radius: 10px;
+}
+
+.container-contacto .grid-contacto > div:first-child {
+  background-color: #a01d26;
 }
 
 .container-contacto .grid-contacto > div:first-child ul li a:hover {

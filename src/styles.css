@@ -6,8 +6,7 @@
 }
 
 body {
-  font-size: 1em;
-  background: #fbfbfb;
+  font-size: 1.1em;
 }
 
 .none {
@@ -62,20 +61,20 @@ body {
 .btn-primary {
   padding: 6px;
   border-radius: 5px;
-  border: 1px solid rgb(116, 193, 199);
+  border: 1px solid rgb(43, 140, 35);
   background: #fff;
-  color: rgb(116, 193, 199);
+  color: rgb(43, 140, 35);
   transition: background-color 0.6s;
   font-size: 17px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(116, 193, 199);
+  background-color: rgb(43, 140, 35);
   color: #fff;
 }
 
 .active {
-  color: rgb(116, 193, 199);
+  color: rgb(43, 140, 35);
 }
 
 .cursor-pointer {
@@ -84,6 +83,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .container-flex-center {
@@ -100,11 +103,11 @@ body {
 }
 
 .font-size-one {
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .font-size-two {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .font-size-three {
@@ -116,7 +119,20 @@ body {
 }
 
 .margin-bottom {
-  margin-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.grid-vertical {
+  display: flex;
+  flex-direction: column;
 }
 
 .padding {
@@ -139,10 +155,6 @@ body {
   padding-bottom: 7px;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   color: #fff;
   font-size: 17px;
@@ -151,11 +163,11 @@ a {
 }
 
 a:hover {
-  color: rgb(116, 193, 199);
+  color: rgb(43, 140, 35);
 }
 
 .alert-send {
-  color: rgb(116, 193, 199);
+  color: rgb(43, 140, 35);
   border-bottom: 1px solid red;
 }
 
@@ -164,13 +176,182 @@ a:hover {
   border-bottom: 1px solid red;
 }
 
+/******************************************
+  Encabezados
+******************************************/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1.1em;
+}
+
+/*******************************************
+  Sobre mi
+*******************************************/
+#sobreMi {
+  width: 768px;
+  max-height: 994px;
+  margin: 20px auto 20px auto;
+  box-shadow: 0 0 8px #aaa;
+  position: relative;
+}
+
+#sobreMi > div:last-child {
+  display: none;
+}
+
+#sobreMi header {
+  background-color: rgb(43, 140, 35);
+  color: #fff;
+  border-top: 14px solid #fff;
+  padding: 25px 34px 25px 250px;
+}
+
+#sobreMi header h5 {
+  color: #bbb;
+}
+
+#sobreMi article {
+  padding: 10px 34px 25px 250px;
+}
+
+#sobreMi aside {
+  background-color: rgb(80, 178, 75);
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 4px;
+  padding: 10px;
+  height: 100%;
+  width: 216px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sobreMi aside > div:first-child img {
+  border-radius: 50%;
+}
+
+.grid-habilidades {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 10px;
+}
+
+.pdf {
+  padding: 6px;
+  position: fixed;
+  top: 60%;
+  right: 3%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: rgb(209, 0, 1);
+  color: #ddd;
+  box-shadow: 0 7px 10px rgb(150, 0, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s all;
+}
+
+.pdf:hover {
+  background-color: rgb(255, 0, 1);
+  color: #fff;
+  transform: scale(1.1, 1.1);
+}
+
+/*******************************************
+  Portafolio
+*******************************************/
+#portafolio header {
+  padding: 6px;
+  text-align: center;
+  background-color: #a01d26;
+  color: #fff;
+}
+
+#portafolio section {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
+#portafolio section article {
+  border: 1px solid rgb(43, 140, 35);
+  box-shadow: 0 0 5px rgb(43, 140, 35);
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+
+#portafolio section article div img {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+}
+
+#portafolio section article div:nth-child(2) {
+  background-color: #a01d26;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0px 5px 0px;
+}
+
+#portafolio section article div:nth-child(3) {
+  padding: 5px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+
+#portafolio section article div:last-child {
+  text-align: center;
+  padding: 10px 0px 0px 0px;
+  position: absolute;
+  bottom: -8px;
+  width: 100%;
+}
+
 /*******************************************
   404
 *******************************************/
 .error {
   background-image: url("/assets/img/error.png");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -229,7 +410,47 @@ a:hover {
   animation-name: fadeIn;
 }
 
+@media screen and (max-width: 1024px) {
+  #portafolio section {
+    margin: 0px 20px 0px 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #sobreMi {
+    width: 100%;
+  }
+
+  #sobreMi > div:first-child {
+    display: none;
+  }
+
+  #sobreMi > div:last-child {
+    display: block;
+    text-align: center;
+  }
+
+  #sobreMi > div:last-child img {
+    max-width: 100%;
+  }
+
+  .pdf {
+    padding: 3px;
+    width: 60px;
+    height: 60px;
+    font-size: 17px;
+  }
+
+  #portafolio section {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  #portafolio section {
+    grid-template-columns: 1fr;
+  }
+
   .padding {
     padding: 5px;
   }

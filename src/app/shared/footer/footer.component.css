@@ -1,22 +1,26 @@
 .footer-container .footer-autor {
-    text-align: center;
-    padding: 20px 10px 20px 10px;
+  text-align: center;
+  padding: 8px;
 }
 
 .footer-container .footer-contacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 30px 20px 30px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 20px 30px 20px;
+}
+
+.footer-container > div:first-child span {
+  font-size: 26px;
 }
 
 @media screen and (max-width: 800px) {
-    .footer-container .footer-contacto {
-        flex-direction: column;
-        padding: 20px 2px 20px 2px;
-    }
+  .footer-container .footer-contacto {
+    flex-direction: column;
+    padding: 20px 2px 20px 2px;
+  }
 
-    .footer-container .footer-contacto > div:first-child {
-        margin-bottom: 30px;
-    }
+  .footer-container .footer-contacto > div:first-child {
+    margin-bottom: 30px;
+  }
 }

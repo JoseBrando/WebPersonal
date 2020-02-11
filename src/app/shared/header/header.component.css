@@ -31,6 +31,7 @@
 }
 
 .header-container .header-menu .menu ul {
+  list-style: none;
   display: flex;
 }
 
@@ -61,8 +62,9 @@
   }
 
   .header-container .header-menu .menu ul {
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .header-container .header-menu .menu ul li {
@@ -70,14 +72,14 @@
   }
 
   .mostrarMenu {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-direction: normal;
     animation-fill-mode: forwards;
     animation-name: mostrarMenu;
   }
 
   .ocultarMenu {
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-direction: normal;
     animation-name: ocultarMenu;
   }
