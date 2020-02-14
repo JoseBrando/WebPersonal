@@ -51,6 +51,10 @@ body {
   color: #a01d26;
 }
 
+.c-green {
+  color: rgb(43, 140, 35);
+}
+
 /*******************************************
     Border
 *******************************************/
@@ -217,7 +221,7 @@ h6 {
 *******************************************/
 #sobreMi {
   width: 768px;
-  max-height: 994px;
+  max-height: 1100px;
   margin: 20px auto 20px auto;
   box-shadow: 0 0 8px #aaa;
   position: relative;
@@ -318,6 +322,7 @@ h6 {
 }
 
 #portafolio section article div img {
+  height: 300px;
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
