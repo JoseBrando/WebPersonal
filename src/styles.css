@@ -28,8 +28,8 @@ body {
 /*******************************************
     Background
 *******************************************/
-.bg-ink {
-  background: #20232a;
+.bg-blue {
+  background: rgb(50, 132, 181);
 }
 
 .bg-rubyred {
@@ -55,6 +55,10 @@ body {
   color: rgb(43, 140, 35);
 }
 
+.c-blue {
+  color: rgb(50, 132, 181);
+}
+
 /*******************************************
     Border
 *******************************************/
@@ -65,20 +69,21 @@ body {
 .btn-primary {
   padding: 6px;
   border-radius: 5px;
-  border: 1px solid rgb(43, 140, 35);
+  border: 1px solid #50d1c0;
   background: #fff;
-  color: rgb(43, 140, 35);
-  transition: background-color 0.6s;
+  color: rgb(50, 132, 181);
+  transition-property: background-color color;
+  transition-duration: 0.3s;
   font-size: 17px;
 }
 
 .btn-primary:hover {
-  background-color: rgb(43, 140, 35);
+  background-color: rgb(50, 132, 181);
   color: #fff;
 }
 
 .active {
-  color: rgb(43, 140, 35);
+  color: #fff;
 }
 
 .cursor-pointer {
@@ -160,14 +165,14 @@ body {
 }
 
 a {
-  color: #fff;
+  color: #ddd;
   font-size: 17px;
   text-decoration: none;
   transition: color 0.5s;
 }
 
 a:hover {
-  color: rgb(43, 140, 35);
+  color: #fff;
 }
 
 .alert-send {
@@ -221,7 +226,7 @@ h6 {
 *******************************************/
 #sobreMi {
   width: 768px;
-  max-height: 1100px;
+  height: auto;
   margin: 20px auto 20px auto;
   box-shadow: 0 0 8px #aaa;
   position: relative;
@@ -276,8 +281,8 @@ h6 {
   position: fixed;
   top: 60%;
   right: 3%;
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   background-color: rgb(209, 0, 1);
   color: #ddd;
@@ -300,7 +305,7 @@ h6 {
 #portafolio header {
   padding: 6px;
   text-align: center;
-  background-color: #a01d26;
+  background-color: rgb(255, 194, 11);
   color: #fff;
 }
 
@@ -314,8 +319,8 @@ h6 {
 }
 
 #portafolio section article {
-  border: 1px solid rgb(43, 140, 35);
-  box-shadow: 0 0 5px rgb(43, 140, 35);
+  border: 1px solid rgb(50, 132, 181);
+  box-shadow: 0 0 5px rgb(50, 132, 181);
   border-radius: 10px;
   width: 100%;
   position: relative;
@@ -330,7 +335,7 @@ h6 {
 }
 
 #portafolio section article div:nth-child(2) {
-  background-color: #a01d26;
+  background-color: rgb(255, 194, 11);
   color: #fff;
   text-align: center;
   padding: 5px 0px 5px 0px;

@@ -1,34 +1,60 @@
-#home > article:last-child {
-  border-top: 1px solid rgb(43, 140, 35);
+.container-fas {
+  display: flex;
+  justify-content: center;
+}
+
+.fas {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(50, 132, 181);
 }
 
 .container-image-intro {
-  background-image: url("/assets/img/intro.png");
-  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 60px);
+  background-image: linear-gradient(
+      rgba(0, 168, 255, 0.5),
+      rgba(0, 168, 255, 0.5)
+    ),
+    url("/assets/img/intro.png");
   background-repeat: no-repeat;
-  height: calc(94vh - 60px);
+  background-size: 100% 100%;
+  clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  position: relative;
+  justify-content: center;
 }
 
-.container-image-intro::before {
-  content: "";
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.4);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.container-image-intro a {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  margin: 0 5px;
+  padding: 12px 35px;
+  outline: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+  transition-property: color, background-color;
+  transition-duration: 0.3s;
 }
 
-.container-image-intro h1 {
-  position: relative;
+.container-image-intro a:hover {
+  color: #50d1c0;
+  background-color: #fff;
+  text-decoration: none;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .container-presentacion {
-  height: calc(100vh - 60px);
+  margin: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,6 +63,14 @@
 .container-presentacion > div {
   width: 50%;
   max-width: 1400;
+  padding: 40px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.container-presentacion > div:hover {
+  transform: translateY(-20px);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .container-presentacion > div > p:first-child {
@@ -44,23 +78,14 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .container-image-intro {
-    height: calc(50vh - 60px);
-  }
-
   .container-presentacion > div {
     width: 70%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .container-image-intro {
-    height: calc(40vh - 60px);
   }
 }
 
 @media screen and (max-width: 480px) {
   .container-presentacion > div {
     width: 90%;
+    padding: 10px;
   }
 }

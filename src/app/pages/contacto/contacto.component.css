@@ -18,11 +18,7 @@
 }
 
 .container-contacto .grid-contacto > div:first-child {
-  background-color: #a01d26;
-}
-
-.container-contacto .grid-contacto > div:first-child ul li a:hover {
-  color: rgb(116, 193, 199);
+  background-color: rgb(50, 132, 181);
 }
 
 .grid-contacto > div:first-child {
