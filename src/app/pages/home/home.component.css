@@ -27,7 +27,7 @@
       rgba(0, 168, 255, 0.2),
       rgba(0, 168, 255, 0.2)
     ),
-    url("programming.jpg");
+    url("programming.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
