@@ -13,22 +13,19 @@ import { PagesComponent } from "./pages.component";
 import { HomeComponent } from "./home/home.component";
 import { PortafolioComponent } from "./portafolio/portafolio.component";
 import { SobremiComponent } from "./sobremi/sobremi.component";
-import { ContactoComponent } from "./contacto/contacto.component";
 
 @NgModule({
   declarations: [
     PagesComponent,
     HomeComponent,
     PortafolioComponent,
-    SobremiComponent,
-    ContactoComponent
+    SobremiComponent
   ],
   imports: [BrowserModule, SharedModule, FormsModule, PAGE_ROUTE],
   exports: [
     HomeComponent,
     PortafolioComponent,
-    SobremiComponent,
-    ContactoComponent
+    SobremiComponent
   ]
 })
 export class PagesModule {}

@@ -5,7 +5,6 @@ import { PagesComponent } from "./pages.component";
 import { HomeComponent } from "./home/home.component";
 import { PortafolioComponent } from "./portafolio/portafolio.component";
 import { SobremiComponent } from "./sobremi/sobremi.component";
-import { ContactoComponent } from "./contacto/contacto.component";
 
 const pageRoute: Routes = [
   {
@@ -15,7 +14,6 @@ const pageRoute: Routes = [
       { path: "home", component: HomeComponent },
       { path: "portafolio", component: PortafolioComponent },
       { path: "sobre_mi", component: SobremiComponent },
-      { path: "contacto", component: ContactoComponent },
       { path: "", redirectTo: "/home", pathMatch: "full" }
     ]
   }

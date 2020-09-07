@@ -20,11 +20,6 @@
           >
         </li>
         <li>
-          <a href="https://brandocortes.com/blog/"
-            ><span class="icon-blogger"></span> BLOG</a
-          >
-        </li>
-        <li>
           <a
             [routerLink]="['/sobre_mi']"
             [routerLinkActive]="['active']"
@@ -40,24 +35,10 @@
             ><span class="icon-briefcase"></span> PORTAFOLIO</a
           >
         </li>
-        <li>
-          <a
-            [routerLink]="['/contacto']"
-            [routerLinkActive]="['active']"
-            (click)="funIconMenu()"
-            ><span class="icon-users"></span> CONTACTO</a
-          >
-        </li>
       </ul>
     </div>
 
     <div class="icono-menu">
-      <a
-        [routerLink]="['/contacto']"
-        [routerLinkActive]="['active']"
-        title="Contacto"
-        ><span class="icon-mail2"></span
-      ></a>
       <a (click)="funIconMenu()" class="cursor-pointer"
         >MENÚ <span class="icon-menu" #iconoMenu></span
       ></a>
