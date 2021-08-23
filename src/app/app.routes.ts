@@ -12,4 +12,4 @@ const appRoute: Routes = [{
   component: NotfoundpageComponent
 }];
 
-export const APP_ROUTE = RouterModule.forRoot(appRoute);
+export const APP_ROUTE = RouterModule.forRoot(appRoute, { relativeLinkResolution: 'legacy' });
