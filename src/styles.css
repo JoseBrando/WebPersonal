@@ -5,8 +5,221 @@
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  font-size: 1.1em;
+html {
+  background-color: #f4f6f9;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+h6 {
+  font-size: 1.1rem;
+}
+
+.perfil {
+  background-color: rgb(50, 132, 181);
+  border-radius: 50%;
+  padding: 10px; 
+  width: 8rem;
+}
+
+.border-radius {
+  border-radius: .75rem;
+}
+
+.b-shadow {
+  box-shadow: 0 0.1rem 0.15rem rgb(40 36 89 / 20%), 0 0.25rem 0.4rem rgb(40 36 89 / 15%);
+}
+
+.p-50 {
+  padding: 50px;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.mb-100 {
+  margin-bottom: 100px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-ts {
+  background-color: #017acb;
+}
+
+.bg-html {
+  background-color: #dd4b25;
+}
+
+.bg-css {
+  background-color: #146eb0;
+}
+
+.bg-angular {
+  background-color: #d6002f;
+}
+
+.bg-php {
+  background-color: #7377ad;
+}
+
+.bg-mysql {
+  background-color: #005e87;
+}
+
+.bg-codeigniter {
+  background-color: #f63800;
+}
+
+.bg-node {
+  background-color: #86be00;
+}
+
+.bg-vue {
+  background-color: #00bb7c;
+}
+
+.bg-git {
+  background-color: #eb4d28;
+}
+
+.bg-gray {
+  background-color: #bbbbbb;
+}
+
+.b-black-8 {
+  border: 8px solid #000000;
+}
+
+.b-white-8 {
+  border: 8px solid #ffffff;
+}
+
+.c-white {
+  color: #ffffff;
+}
+
+.c-vue {
+  color: #31495e;
+}
+
+.c-codeigniter {
+  color: #f6f1d5;
+}
+
+.c-mysql {
+  color: #ea8c0f;
+}
+
+.c-node {
+  color: #403f3a;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-75 {
+  width: 75%;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.d-flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-gap-20 {
+  grid-gap: 2rem;
+}
+
+.circle {
+  border-radius: 50%;
+  height: 8rem;
+  width: 8rem;
 }
 
 .none {
@@ -15,10 +228,6 @@ body {
 
 .block {
   display: block;
-}
-
-.shadow {
-  box-shadow: 0 0 10px rgb(38, 39, 39);
 }
 
 .c-rubyred-first-letter::first-letter {
@@ -127,14 +336,6 @@ body {
   font-size: 1.12em;
 }
 
-.border-radius {
-  border-radius: 5px;
-}
-
-.margin-bottom {
-  margin-bottom: 10px;
-}
-
 .ml-20 {
   margin-left: 20px;
 }
@@ -187,42 +388,6 @@ a:hover {
 .alert-error {
   color: red;
   border-bottom: 1px solid red;
-}
-
-/******************************************
-  Encabezados
-******************************************/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 300;
-}
-
-h1 {
-  font-size: 2.3em;
-}
-
-h2 {
-  font-size: 2em;
-}
-
-h3 {
-  font-size: 1.7em;
-}
-
-h4 {
-  font-size: 1.4em;
-}
-
-h5 {
-  font-size: 1.2em;
-}
-
-h6 {
-  font-size: 1.1em;
 }
 
 /*******************************************
@@ -427,6 +592,10 @@ h6 {
   #portafolio section {
     margin: 0px 20px 0px 20px;
   }
+
+  .columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -457,10 +626,24 @@ h6 {
   #portafolio section {
     grid-template-columns: 1fr 1fr;
   }
+
+  .columns {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .columns {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 480px) {
   #portafolio section {
+    grid-template-columns: 1fr;
+  }
+
+  .columns {
     grid-template-columns: 1fr;
   }
 

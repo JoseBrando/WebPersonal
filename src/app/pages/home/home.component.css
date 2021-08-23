@@ -24,10 +24,10 @@
   width: 100%;
   height: calc(100vh - 60px);
   background-image: linear-gradient(
-      rgba(0, 168, 255, 0.2),
-      rgba(0, 168, 255, 0.2)
+      rgba(0, 168, 255, 0.3),
+      rgba(0, 168, 255, 0.3)
     ),
-    url("programming.jpg");
+    url("laptop2.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   clip-path: polygon(100% 0, 100% 77%, 50% 100%, 0 75%, 0 0);
@@ -70,13 +70,6 @@
   width: 50%;
   max-width: 1400;
   padding: 40px;
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.container-presentacion > div:hover {
-  transform: translateY(-20px);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .container-presentacion > div > p:first-child {
